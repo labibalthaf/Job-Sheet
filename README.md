@@ -105,3 +105,18 @@ Variabel adalah tempat menyimpan nilai. Deklarasi variabel:
 ```c
 tipe_data nama_variabel;
 
+# Job Sheet 4 - Operator
+
+Operator adalah simbol yang digunakan untuk melakukan operasi tertentu.
+
+Berdasarkan jumlah operand:
+- Unary (1 operand)  
+- Binary (2 operand)
+- Ternary (3 operand)
+
+## Operator Aritmatika
+
+Melakukan operasi matematika. Contoh:
+
+```c
++ - * / %
