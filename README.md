@@ -61,3 +61,39 @@ IDE adalah software untuk mengembangkan program, memiliki text editor, compiler,
 
 ### Persiapan Pemrograman C
 Dibutuhkan text editor dan compiler. Compiler bisa GCC, Clang, dll. Perlu set environment variable agar compiler dikenali di command prompt.
+
+# Job Sheet 2 - Pemrograman Dasar C
+
+## Struktur Dasar C
+Struktur dasar program C terdiri dari:
+
+### Bagian include
+Header files (#include) untuk mengimport fungsi-fungsi pada file lain
+
+### Main function
+Fungsi wajib ada yang dieksekusi pertama kali. Diawali {} dan diakhiri {}. Mengembalikan nilai int (return 0) atau void.
+
+### Statement
+Perintah yang disertai titik koma (;) di akhir.
+
+### Identifiers
+Nama variabel, fungsi, dsb. Diawali huruf atau underscore. Bersifat case sensitive.
+
+### Comments
+Ada comment satu baris (//) dan multiline (/* ... */).
+
+### Whitespace
+Spasi, tab, newline untuk memisahkan statement.
+
+## Input Output
+
+### Output
+- printf() -> mencetak ke layar sesuai format
+- puts() -> mencetak string dan baris baru
+- putchar() -> mencetak satu karakter
+
+### Input
+- scanf() -> meminta input sesuai format
+- gets() -> input string (rawan overflow)
+- fgets() -> input string dengan buffer size
+
