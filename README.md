@@ -120,3 +120,16 @@ Melakukan operasi matematika. Contoh:
 
 ```c
 + - * / %
+
+# Job Sheet 5 - Flow Control: Decision Making
+
+Decision making adalah mengubah alur eksekusi program berdasarkan kondisi tertentu.
+
+## If
+
+Mengembangkan kode jika kondisi bernilai TRUE.
+
+```c
+if(condition) {
+  // do something
+}
