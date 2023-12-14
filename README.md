@@ -136,9 +136,6 @@ Nilai tetap yang tidak bisa diubah. Deklarasi konstanta:
 const tipe_data NAMA_KONSTANTA = nilai; 
 ```
 
-Berikut adalah kode README yang Anda minta:
-
-```markdown
 # Job Sheet 4 - Operator
 
 Operator adalah simbol yang digunakan untuk melakukan operasi tertentu.
@@ -187,11 +184,7 @@ Melakukan operasi pada biner/bit.
 ```c
 & | ^ ~ << >>
 ``` 
-```
 
-Berikut adalah kode README yang Anda minta:
-
-```markdown
 # Job Sheet 5 - Flow Control: Decision Making
 
 Decision making adalah mengubah alur eksekusi program berdasarkan kondisi tertentu.
@@ -261,7 +254,6 @@ variable = condition ? true : false;
 
  Baik, berikut adalah penjelasan dari job sheet flow control loop sebagai script README GitHub untuk file yang Anda berikan sebelumnya:
 
-```
 
 # Jobsheet 6 - Perulangan dalam Bahasa Pemrograman C
 
@@ -358,7 +350,6 @@ for(int i=1; i<=3; i++) {
 ```
 
 Perulangan luar mengontrol nilai `i` dan perulangan dalam mengontrol nilai `j`.
-```
 
 # Jobsheet 7 - Array dalam Bahasa Pemrograman C
 
@@ -410,7 +401,6 @@ for(int i = 0; i < 5; i++) {
 ``` 
 
 Dengan perulangan, semua data array akan diproses.
-```
 
 # Jobsheet 8 - Fungsi dan Prosedur dalam Bahasa Pemrograman C
 
@@ -521,9 +511,9 @@ int main() {
 ```
 
 Dengan pointer, nilai variabel asli ikut berubah dalam fungsi.
-```
 
-# Jobsheet - Enumerasi dan Struktur Data dalam Bahasa Pemrograman C
+
+# Jobsheet 10 - Enumerasi dan Struktur Data dalam Bahasa Pemrograman C
 
 ## Enumerasi
 
