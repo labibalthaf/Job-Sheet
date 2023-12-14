@@ -102,7 +102,7 @@ Spasi, tab, newline untuk memisahkan statement.
 ## Variabel
 Variabel adalah tempat menyimpan nilai. Deklarasi variabel:
 
-```c
+'''c
 tipe_data nama_variabel;
 
 # Job Sheet 4 - Operator
@@ -118,7 +118,7 @@ Berdasarkan jumlah operand:
 
 Melakukan operasi matematika. Contoh:
 
-```c
+``'c
 + - * / %
 
 # Job Sheet 5 - Flow Control: Decision Making
@@ -129,7 +129,7 @@ Decision making adalah mengubah alur eksekusi program berdasarkan kondisi terten
 
 Mengembangkan kode jika kondisi bernilai TRUE.
 
-```c
+``'c
 if(condition) {
   // do something
 }
