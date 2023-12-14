@@ -135,6 +135,129 @@ Nilai tetap yang tidak bisa diubah. Deklarasi konstanta:
 #define NAMA_KONSTANTA nilai
 const tipe_data NAMA_KONSTANTA = nilai; 
 ```
+
+Berikut adalah kode README yang Anda minta:
+
+```markdown
+# Job Sheet 4 - Operator
+
+Operator adalah simbol yang digunakan untuk melakukan operasi tertentu.
+
+Berdasarkan jumlah operand:
+- Unary (1 operand)  
+- Binary (2 operand)
+- Ternary (3 operand)
+
+## Operator Aritmatika
+
+Melakukan operasi matematika. Contoh:
+
+```c
++ - * / %
+```
+
+## Operator Penugasan 
+
+Untuk memberi nilai pada variabel.
+
+```c
+= += -= *= /= %=
+```
+
+## Operator Perbandingan
+
+Membandingkan nilai, menghasilkan true/false.
+
+```c
+> < == != >= <=
+```
+
+## Operator Logika
+
+Melakukan AND, OR, NOT.
+
+```c
+&& || !
+```
+
+## Operator Bitwise
+
+Melakukan operasi pada biner/bit.
+
+```c
+& | ^ ~ << >>
+``` 
+```
+
+Berikut adalah kode README yang Anda minta:
+
+```markdown
+# Job Sheet 5 - Flow Control: Decision Making
+
+Decision making adalah mengubah alur eksekusi program berdasarkan kondisi tertentu.
+
+## If
+
+Mengembangkan kode jika kondisi bernilai TRUE.
+
+```c
+if(condition) {
+  // do something
+}
+```
+
+## If Else 
+
+Terdapat 2 kemungkinan alur berdasarkan kondisi.
+
+```c
+if(condition) {
+  // Jika TRUE
+} else {
+  // Jika FALSE  
+}
+```
+
+## If Else If
+
+Beberapa kemungkinan alur berdasarkan beberapa kondisi.
+
+```c
+if(condition 1) {
+  // Jika kondisi 1 TRUE
+} else if(condition 2) {
+  // Jika kondisi 2 TRUE
+} else {
+  // Jika semua kondisi FALSE
+}
+```
+
+## Switch Case
+
+Beberapa kemungkinan alur mirip nested if-else.
+
+```c
+switch(variable) {
+  case value1: 
+    // Jika variable == value1
+    break;
+  
+  case value2:
+    // Jika variable == value2
+    break;
+    
+  default:
+    // Jika tidak ada yang cocok
+}
+```
+
+## Ternary Operator
+
+Bentuk singkat dari if-else.
+
+```c
+variable = condition ? true : false;
+```
 ```
 
 
