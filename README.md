@@ -97,6 +97,7 @@ Spasi, tab, newline untuk memisahkan statement.
 - gets() -> input string (rawan overflow)
 - fgets() -> input string dengan buffer size
 
+
 # Job Sheet 3 - Variabel, Konstanta & Tipe Data
 
 ## Variabel
@@ -104,6 +105,36 @@ Variabel adalah tempat menyimpan nilai. Deklarasi variabel:
 
 ```c
 tipe_data nama_variabel;
+``` 
 
+Aturan penamaan variabel:
+
+- Tidak boleh diawali angka/simbol
+- Tidak boleh menggunakan kata kunci bahasa C
+- Case sensitive
+- Gunakan underscore jika lebih dari satu suku kata
+
+## Tipe Data
+
+Tipe data dasar:
+
+- `char`: 1 karakter
+- `int`: bilangan bulat 
+- `float`: bilangan desimal
+- `double`: bilangan desimal lebih besar 
+
+Tipe data khusus:
+
+- `void`: tidak ada nilai
+
+## Konstanta 
+
+Nilai tetap yang tidak bisa diubah. Deklarasi konstanta:
+
+```c
+#define NAMA_KONSTANTA nilai
+const tipe_data NAMA_KONSTANTA = nilai; 
+```
+```
 
 
