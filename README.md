@@ -1,3 +1,10 @@
+# Profil Mahasiswa
+
+- Nama: **Labib Althaf**
+- NIM: **23343042**
+- Kode Sesi: **202313430011**
+- Dosen Pengampu: **Randi Proska Sandra, M.sc**
+
 # Job Sheet 1 - Algoritma, Pemrograman & IDE
 
 ## Pendahuluan
