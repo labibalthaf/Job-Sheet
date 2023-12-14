@@ -262,49 +262,346 @@ variable = condition ? true : false;
  Baik, berikut adalah penjelasan dari job sheet flow control loop sebagai script README GitHub untuk file yang Anda berikan sebelumnya:
 
 ```
-# Job Sheet 6 - Flow Control: Loop
 
-Loop digunakan untuk mengeksekusi kode secara berulang. 
+# Jobsheet 6 - Perulangan dalam Bahasa Pemrograman C
 
-## Perulangan For
+Perulangan atau looping digunakan untuk mengeksekusi kode secara berulang. Ada 4 jenis perulangan dalam bahasa C:
 
-Perulangan dengan jumlah yang sudah ditentukan.
+## 1. Perulangan For
 
-```
-for(init; condition; post) {
-  // code to be executed
+Perulangan for digunakan jika jumlah perulangan sudah diketahui sebelumnya. 
+
+```c
+for(inisialisasi; kondisi; increment/decrement) {
+   // kode yang dijalankan berulang 
 }
 ```
 
-## Perulangan While
+Penjelasan:
 
-Perulangan selama kondisi bernilai TRUE. 
+- `inisialisasi` : Variabel untuk perulangan diinisialisasi
+- `kondisi` : Kondisi perulangan, akan berhenti jika bernilai false 
+- `increment/decrement` : Increment atau decrement variabel perulangan tiap iterasi
 
-```
-while(condition) {
-  // code to be executed  
+Contoh perulangan for untuk menampilkan angka 1 hingga 5:
+
+```c
+for(int i=1; i<=5; i++) {
+  printf("%d\n", i); 
 }
 ```
 
-## Perulangan Do While
+Pada contoh di atas, `i` diinisialisasi dengan nilai 1, lalu dilakukan perulangan selama `i` kurang dari sama dengan 5. Setiap perulangan `i` ditambah 1.
 
-Sama dengan while, tapi minimal dieksekusi 1 kali.
+## 2. Perulangan While
 
+Perulangan while digunakan jika jumlah perulangan belum diketahui pasti sebelumnya.
+
+```c 
+while(kondisi) {
+  // kode yang dijalankan berulang
+}
 ```
+
+Perulangan dilakukan selama `kondisi` bernilai true. 
+
+Contoh perulangan while untuk meminta input angka dari user hingga input 0:
+
+```c
+int input;
+printf("Masukkan angka (ketik 0 untuk berhenti):\n");
+
+scanf("%d", &input);
+while(input != 0) {
+  printf("Anda memasukkan angka %d\n", input);  
+  scanf("%d", &input);
+}
+```
+
+Perulangan akan terus dilakukan selama nilai yang dimasukkan user tidak sama dengan 0.
+
+## 3. Perulangan Do While
+
+Perulangan do while mirip dengan while, bedanya pengecekan kondisi dilakukan setelah melakukan perulangan.
+
+```c
 do {
-  // code to be executed
-} while (condition);
+  // kode yang dijalankan
+} while(kondisi);
 ```
 
-## Nested Loop
+Dengan do while, minimal pasti akan menjalankan perulangan 1 kali walaupun kondisi tidak terpenuhi.
 
-Perulangan di dalam perulangan.
+Contoh perulangan do while untuk menghitung mundur dari 10 ke 1:
 
+```c  
+int i = 10;
+do {
+  printf("%d\n", i--); 
+} while(i > 0);
 ```
-for(init; condition; post) {
-  for(init; condition; post) {
-    // code to be executed 
+
+Perulangan dilakukan minimal sekali untuk mencetak nilai 10, meskipun kondisi tidak terpenuhi.
+
+## 4. Perulangan Bersarang
+
+Perulangan bersarang artinya perulangan di dalam perulangan. Bisa menggabungkan semua jenis perulangan.
+
+Contoh perulangan for di dalam perulangan for:
+
+```c
+for(int i=1; i<=3; i++) {
+  for(int j=1; j<=2; j++) {
+    printf("%d %d\n", i, j); 
   }
 }
 ```
 
+Perulangan luar mengontrol nilai `i` dan perulangan dalam mengontrol nilai `j`.
+```
+
+# Jobsheet 7 - Array dalam Bahasa Pemrograman C
+
+Array adalah struktur data yang digunakan untuk menyimpan sekumpulan data dalam satu tempat. Setiap data dalam array memiliki indeks yang digunakan untuk mengakses data tersebut.
+
+## Deklarasi Array
+
+```c
+// deklarasi array
+type arrayName[arraySize];
+
+// contoh
+int numbers[5]; 
+char names[10];
+```
+
+Kita perlu tentukan tipe data dan ukuran array saat deklarasi array.
+
+## Mengakses Nilai Array
+
+Setiap data pada array memiliki indeks yang dimulai dari 0.
+
+```c
+int numbers[5] = {1, 2, 3, 4, 5}; 
+
+// mengakses array
+numbers[0]; // nilainya 1
+numbers[3]; // nilainya 4
+```
+
+## Mengubah Nilai Array
+
+Kita juga bisa mengubah nilai array pada indeks tertentu:
+
+```c
+numbers[0] = 10; 
+```
+
+Sekarang nilai pada indeks 0 berubah menjadi 10.
+
+## Perulangan Array
+
+Kita bisa mengakses semua nilai array menggunakan perulangan:
+
+```c
+for(int i = 0; i < 5; i++) {
+  printf("Nilai: %d\n", numbers[i]); 
+}
+``` 
+
+Dengan perulangan, semua data array akan diproses.
+```
+
+# Jobsheet 8 - Fungsi dan Prosedur dalam Bahasa Pemrograman C
+
+Fungsi adalah blok kode yang dapat dipanggil berulang kali untuk menjalankan tugas tertentu. Fungsi digunakan untuk modularitas program.
+
+## Deklarasi Fungsi
+
+Berikut adalah contoh deklarasi fungsi dalam C:
+
+```c
+// fungsi tanpa parameter
+void sayHello() {
+  printf("Halo dunia!");
+}
+
+// fungsi dengan parameter
+int kuadrat(int angka) {
+  return angka * angka;
+}
+``` 
+
+Kita tentukan:
+
+- Tipe data return value (void jika tidak ada return value)
+- Nama fungsi
+- Parameter (opsional)
+
+## Memanggil Fungsi
+
+Untuk memanggil fungsi, cukup tulis nama fungsinya:
+
+```c
+int main() {
+
+  // memanggil fungsi tanpa parameter
+  sayHello();
+  
+  // memanggil fungsi dengan parameter
+  int hasil = kuadrat(5);
+
+}
+```
+
+## Pass by Value dan Reference 
+
+C mendukung pass by value dan pass by reference:
+
+```c
+// pass by value
+void fungsi(int angka) {
+   angka *= 2; 
+}
+
+// pass by reference
+void fungsi(int* angka) {
+   *angka *= 2;  
+}
+```
+
+# Jobsheet 9 - Pointer dalam Bahasa Pemrograman C
+
+Pointer adalah variabel yang menyimpan alamat memori dari variabel lain. Pointer digunakan untuk mengakses data secara tidak langsung melalui alamat memori.
+
+## Deklarasi Pointer
+
+```c
+// deklarasi pointer 
+int* ptr;
+```
+
+Tambahkan tanda `*` untuk menandakan varibel pointer.
+
+## Mengakses Nilai Melalui Pointer
+
+```c
+int num = 10;
+int* ptr = &num; // ptr menyimpan alamat num
+
+// akses nilai melalui pointer
+printf("%d", *ptr); // nilainya 10
+```
+
+Gunakan operator `*` untuk mengakses nilai yang disimpan pada alamat pointer.
+
+## Mengubah Nilai Melalui Pointer
+
+```c 
+*ptr = 20; // ubah nilai ke 20
+```
+
+Pointer juga bisa digunakan untuk mengubah nilai variabel aslinya.
+
+## Pointer dan Fungsi
+
+Pointer digunakan untuk pass by reference ke fungsi:
+
+```c
+void kuadrat(int* nilai) {
+  *nilai *= *nilai; // akses melalui pointer
+}
+
+int main() {
+  int num = 5;
+  kuadrat(&num);
+  
+  printf("%d", num); // nilainya 25
+}
+```
+
+Dengan pointer, nilai variabel asli ikut berubah dalam fungsi.
+```
+
+# Jobsheet - Enumerasi dan Struktur Data dalam Bahasa Pemrograman C
+
+## Enumerasi
+
+Enumerasi (enum) adalah tipe data khusus yang berisi himpunan konstanta bernama.
+
+Contoh deklarasi enum:
+
+```c
+enum month {
+  JAN = 1, 
+  FEB,
+  MAR,
+  // etc
+};
+```
+
+Enum didefinisikan dengan kata kunci `enum` diikuti dengan nama enum dan daftar konstantanya di dalam kurung kurawal.
+
+Contoh penggunaan:
+
+```c
+enum month myMonth;
+
+myMonth = JAN;
+```
+
+## Struktur Data (Struct) 
+
+Struktur data digunakan untuk menyimpan lebih dari satu nilai berbeda jenis data dalam satu tempat.
+
+Contoh deklarasi struct:
+
+```c
+struct Mahasiswa {
+  char nama[100];
+  int nim; 
+  char jurusan[50];
+};
+``` 
+
+Struct didefinisikan dengan kata kunci `struct` diikuti nama struct dan daftar anggotanya.
+
+Contoh penggunaan:
+
+```c 
+struct Mahasiswa mhs1; 
+
+strcpy(mhs1.nama, "John"); 
+mhs1.nim = 101;
+```
+
+# Job Sheet 11 - File Handling dalam Bahasa Pemrograman C
+
+File Handling digunakan untuk membaca dan menulis data ke file sehingga data tetap tersimpan meskipun program ditutup.
+
+## Jenis File
+- File text: txt, csv, html. Mudah dibaca dan ditulis. 
+- File binary: exe, bin. Sulit dibaca tapi bisa menyimpan data lebih banyak.
+
+## Membaca File
+Gunakan fungsi fopen() dengan mode "r". Kembalian fopen adalah pointer ke file. Fungsi fgets() untuk membaca per baris. Baca semua baris dengan perulangan.
+
+Contoh:
+```c
+FILE *fptr = fopen("file.txt","r"); 
+char buff[255];
+
+while(fgets(buff,255,fptr)!=NULL) {
+  printf("%s",buff);
+}
+```
+
+## Menulis File
+Gunakan fungsi fopen() dengan mode "w" atau "a". Fungsi fputs() untuk menulis ke file.
+
+Contoh:
+```c  
+FILE *fptr = fopen("file.txt","w");
+fputs("Baris 1",fptr);
+fputs("Baris 2",fptr);
+```
