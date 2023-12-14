@@ -97,3 +97,11 @@ Spasi, tab, newline untuk memisahkan statement.
 - gets() -> input string (rawan overflow)
 - fgets() -> input string dengan buffer size
 
+# Job Sheet 3 - Variabel, Konstanta & Tipe Data
+
+## Variabel
+Variabel adalah tempat menyimpan nilai. Deklarasi variabel:
+
+```c
+tipe_data nama_variabel;
+
