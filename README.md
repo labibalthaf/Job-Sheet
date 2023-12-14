@@ -258,6 +258,53 @@ Bentuk singkat dari if-else.
 ```c
 variable = condition ? true : false;
 ```
+
+ Baik, berikut adalah penjelasan dari job sheet flow control loop sebagai script README GitHub untuk file yang Anda berikan sebelumnya:
+
+```
+# Job Sheet 6 - Flow Control: Loop
+
+Loop digunakan untuk mengeksekusi kode secara berulang. 
+
+## Perulangan For
+
+Perulangan dengan jumlah yang sudah ditentukan.
+
+```
+for(init; condition; post) {
+  // code to be executed
+}
 ```
 
+## Perulangan While
+
+Perulangan selama kondisi bernilai TRUE. 
+
+```
+while(condition) {
+  // code to be executed  
+}
+```
+
+## Perulangan Do While
+
+Sama dengan while, tapi minimal dieksekusi 1 kali.
+
+```
+do {
+  // code to be executed
+} while (condition);
+```
+
+## Nested Loop
+
+Perulangan di dalam perulangan.
+
+```
+for(init; condition; post) {
+  for(init; condition; post) {
+    // code to be executed 
+  }
+}
+```
 
