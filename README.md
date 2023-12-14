@@ -102,34 +102,27 @@ Spasi, tab, newline untuk memisahkan statement.
 ## Variabel
 Variabel adalah tempat menyimpan nilai. Deklarasi variabel:
 
-'''c
+``
 tipe_data nama_variabel;
 
-# Job Sheet 4 - Operator
+Aturan penamaan variabel:
 
-Operator adalah simbol yang digunakan untuk melakukan operasi tertentu.
+Tidak boleh diawali angka/simbol
+Tidak boleh menggunakan kata kunci bahasa C
+Case sensitive
+Gunakan underscore jika lebih dari satu suku kata
+Tipe Data
+Tipe data dasar:
 
-Berdasarkan jumlah operand:
-- Unary (1 operand)  
-- Binary (2 operand)
-- Ternary (3 operand)
+char: 1 karakter
+int: bilangan bulat
+float: bilangan desimal
+double: bilangan desimal lebih besar
+Tipe data khusus:
 
-## Operator Aritmatika
+void: tidak ada nilai
+Konstanta
+Nilai tetap yang tidak bisa diubah. Deklarasi konstanta:
 
-Melakukan operasi matematika. Contoh:
-
-``'c
-+ - * / %
-
-# Job Sheet 5 - Flow Control: Decision Making
-
-Decision making adalah mengubah alur eksekusi program berdasarkan kondisi tertentu.
-
-## If
-
-Mengembangkan kode jika kondisi bernilai TRUE.
-
-``'c
-if(condition) {
-  // do something
-}
+#define NAMA_KONSTANTA nilai
+const tipe_data NAMA_KONSTANTA = nilai; 
